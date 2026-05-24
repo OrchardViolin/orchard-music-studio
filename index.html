@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Violin and Piano Lessons in a Home Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Orchard Violin & Piano Studio</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-content">
+
+    <p class="hero-tag">Orchard Violin & Piano Studio</p>
+
+    <h1 class="fade-in">Private Violin & Piano Lessons</h1>
+
+    <p class="hero-sub fade-in-delay">
+      Warm, personalized music lessons for children in a calm and welcoming home studio in Burlington.
+    </p>
+
+    <div class="button-group fade-in-delay2">
+      <a href="https://wa.me/19053017716" class="btn whatsapp-btn" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> Book a Lesson
+      </a>
+
+      <a href="lessons.html" class="btn btn-secondary">
+        View Lessons
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<!-- PROMO WORKSHOP -->
+<section class="promo-banner">
+  <div class="promo-content">
+
+    <div class="promo-text">
+      <h2>
+        Violin Workshop for Kids (Ages 6–10)
+        <span class="badge">FREE</span>
+      </h2>
+
+      <p> Small group · Instruments included</p>
+
+      <p class="promo-note">Limited spots available – small group only</p>
+
+      <a href="https://wa.me/19053017716?text=Hello,%20I%20would%20like%20to%20register%20for%20the%20violin%20workshop."
+         class="btn whatsapp-btn" target="_blank">
+        Register Now
+      </a>
+    </div>
+
+    <div class="promo-image">
+      <img src="images/workshop2.png" alt="Violin Workshop">
+    </div>
+
+  </div>
+</section>
+
+<!-- WELCOME (CAMBIADO PARA NO REPETIR) -->
+<section class="home-intro scroll-hidden">
+  <h2>Why Parents Choose Us</h2>
+  <p>
+    We create a warm and supportive environment where children can enjoy music,
+    build confidence, and learn at their own pace.
+  </p>
+
+  <ul>
+    <li>Small group or private lessons</li>
+    <li>Personalized teaching approach</li>
+    <li>Instruments available for beginners</li>
+    <li>English and Spanish lessons</li>
+  </ul>
+
+  <a href="lessons.html" class="btn">View Lessons</a>
+</section>
+
+<!-- NEWS -->
+<section class="news-preview scroll-hidden">
+  <h2>Latest News & Events</h2>
+
+  <div class="news-grid">
+    <div class="news-card">
+      <p class="news-date">April 2026</p>
+      <h3>Free Trial Lesson Available</h3>
+      <p>We are currently offering a free trial lesson for new beginner students.</p>
+    </div>
+
+    <div class="news-card">
+      <p class="news-date">May 2026</p>
+      <h3>New Beginner Piano Spots</h3>
+      <p>New openings are now available for beginner piano students in our home studio.</p>
+    </div>
+
+    <div class="news-card">
+      <p class="news-date">Summer 2026</p>
+      <h3>Upcoming Group Music Activities</h3>
+      <p>We are planning small music activities and special lessons for children this summer.</p>
+    </div>
+  </div>
+
+  <div class="news-link">
+    <a href="contact.html" class="btn">Ask About Current Openings</a>
+  </div>
+</section>
+
+<script>
+  const elements = document.querySelectorAll('.scroll-hidden');
+
+  function showOnScroll() {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    elements.forEach(el => {
+      const boxTop = el.getBoundingClientRect().top;
+
+      if (boxTop < triggerBottom) {
+        el.classList.add('scroll-show');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', showOnScroll);
+  showOnScroll();
+</script>
+
+</body>
+</html>
