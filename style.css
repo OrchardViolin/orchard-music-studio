@@ -549,3 +549,26 @@ h1, h2, h3 {
 .whatsapp-btn i {
   margin-right: 8px;
 }
+/* ===== HERO RESPONSIVE (CELULAR) ===== */
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 70vh;
+    margin-top: 60px;
+    background-position: center;
+  }
+
+  .overlay {
+    padding: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+}
